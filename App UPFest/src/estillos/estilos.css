@@ -1,0 +1,1693 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  height: calc(100vh - 60px);
+  background-color: #181818;
+}
+
+.conteudo {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.inicio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+}
+
+.navegacao {
+  width: 100%;
+  height: 60px;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+}
+.navegacao > item-menu a img {
+  width: 40px;
+  margin-left: 10px;
+}
+.navegacao > item-menu a img:hover {
+  cursor: pointer;
+}
+
+.titulos {
+  width: 95%;
+  display: flex;
+  align-items: flex-start;
+}
+.titulos > h1 {
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 6vw;
+  margin: 2px;
+  margin-top: 5px;
+}
+
+.bg-img-card-festival-1 {
+  background-image: url("../assets/images/sonar_24.jpg");
+}
+
+.bg-img-card-festival-2 {
+  background-image: url("../assets/images/sonar_23.jpg");
+}
+
+.bg-img-card-festival-3 {
+  background-image: url("../assets/images/brunch.jpg");
+}
+
+.bg-img-card-festival-4 {
+  background-image: url("../assets/images/somnii_23.jpg");
+}
+
+.bg-img-card-festival-5 {
+  background-image: url("../assets/images/somnii_24.jpg");
+}
+
+.bg-img-card-festival-6 {
+  background-image: url("../assets/images/tomorrowland.jpg");
+}
+
+.bg-img-lista-artista-1 {
+  background-image: url("../assets/images/artbat.jpg");
+}
+
+.bg-img-lista-artista-2 {
+  background-image: url("../assets/images/blasterjaxx.jpg");
+}
+
+.bg-img-lista-artista-3 {
+  background-image: url("../assets/images/nto.jpg");
+}
+
+.bg-img-lista-artista-4 {
+  background-image: url("../assets/images/oliver.jpg");
+}
+
+.bg-img-lista-artista-5 {
+  background-image: url("../assets/images/timmy.jpg");
+}
+
+.bg-img-lista-artista-6 {
+  background-image: url("../assets/images/amelie.jpg");
+}
+
+/* -------------------------------------------------------- */
+.navegacao {
+  width: 100%;
+  height: 60px;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+}
+.navegacao > item-menu a img {
+  width: 40px;
+  margin-left: 10px;
+}
+.navegacao > item-menu a img:hover {
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------- */
+.card.card-festival {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.card.card-festival .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 95%;
+  border-radius: 20px;
+}
+.card.card-festival .color-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 173px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(235, 235, 235, 0), rgba(80, 80, 80, 0.7), rgb(38, 38, 38), rgb(38, 38, 38));
+}
+.card.card-festival .info-festival {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card.card-festival .info-festival > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.card.card-festival .info-festival > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.card.card-festival .info-festival > h1:first-of-type {
+  color: #ff9900;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.card.card-festival .extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card.card-festival .extras .rectangulo-preco {
+  background-color: #181818;
+  border-radius: 6px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+.card.card-festival .extras .rectangulo-preco span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.card.card-festival-comprado {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.card.card-festival-comprado .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 95%;
+  height: 200px;
+  border-radius: 20px;
+}
+.card.card-festival-comprado .color-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 173px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(235, 235, 235, 0), rgba(80, 80, 80, 0.7), rgb(38, 38, 38), rgb(38, 38, 38));
+}
+.card.card-festival-comprado .rectangulo-status {
+  background-color: #ff9900;
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+}
+.card.card-festival-comprado .rectangulo-status span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+  color: white;
+}
+.card.card-festival-comprado .circulo-bilhete {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+}
+.card.card-festival-comprado::before {
+  content: "";
+  position: absolute;
+  right: 50px;
+  height: 200px;
+  border-left: 6px dashed #ff8a00;
+  z-index: 1;
+}
+
+/* -------------------------------------------------------- */
+.lista.lista-festival {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-festival .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px 0 0 20px;
+}
+.lista.lista-festival .bg-img .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  border-radius: 20px;
+}
+.lista.lista-festival .info-festival {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-festival .info-festival > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700 !important;
+  font-size: 4vw;
+}
+.lista.lista-festival .info-festival > h1 {
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-festival .info-festival > h1:first-of-type {
+  color: #ff9900;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-festival .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+}
+.lista.lista-artista {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-artista .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+}
+.lista.lista-artista .bg-img-lista-artista1 {
+  background-image: url("../assets/images/amelie.jpg");
+}
+.lista.lista-artista .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  border-radius: 90px;
+}
+.lista.lista-artista .info-artista {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-artista .info-artista > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-artista .info-artista > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-artista .info-artista > h1:first-of-type {
+  color: #ff9900;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-artista .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+}
+.lista.lista-concerto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-concerto .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+}
+.lista.lista-concerto .bg-img-lista-concerto1 {
+  background-image: url("../assets/images/amelie.jpg");
+}
+.lista.lista-concerto .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  border-radius: 90px;
+}
+.lista.lista-concerto .info-concerto {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-concerto .info-concerto > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-concerto .info-concerto > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-concerto .info-concerto > h1:first-of-type {
+  color: #ff9900;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-concerto .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+}
+.lista.lista-bilhete {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-bilhete .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background-color: #323232;
+  background-size: 60%;
+}
+.lista.lista-bilhete .bg-img-lista-bilhete1 {
+  background-image: url("../assets/icons/ticket.svg");
+}
+.lista.lista-bilhete .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  border-radius: 90px;
+  justify-content: center;
+}
+.lista.lista-bilhete .info-bilhete {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-bilhete .info-bilhete > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-bilhete .info-bilhete > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-bilhete .info-bilhete > h1:first-of-type {
+  color: #ff9900;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-bilhete .rectangulo-preco {
+  background-color: #181818;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 30px;
+}
+.lista.lista-bilhete .rectangulo-preco > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-pagamento {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-pagamento .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background-color: rgb(50, 50, 50);
+  background-size: 60%;
+}
+.lista.lista-pagamento .bg-img-pagamento {
+  background-image: url("../assets/icons/card.svg");
+}
+.lista.lista-pagamento .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  border-radius: 90px;
+}
+.lista.lista-pagamento .info-pagamento {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-pagamento .info-pagamento > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-pagamento .info-pagamento > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-pagamento .info-pagamento > h1:first-of-type {
+  color: #00e109;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-pagamento .rectangulo-preco {
+  background-color: #181818;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 30px;
+}
+.lista.lista-pagamento .rectangulo-preco > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-pagamento-pendente {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-pagamento-pendente .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background-color: #323232;
+  background-size: 60%;
+}
+.lista.lista-pagamento-pendente .bg-img-pagamento {
+  background-image: url("../assets/icons/card.svg");
+}
+.lista.lista-pagamento-pendente .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  border-radius: 90px;
+  justify-content: center;
+}
+.lista.lista-pagamento-pendente .info-pagamento {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-pagamento-pendente .info-pagamento > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-pagamento-pendente .info-pagamento > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-pagamento-pendente .info-pagamento > h1:first-of-type {
+  color: #ff9900;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-pagamento-pendente .rectangulo-preco {
+  background-color: #181818;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 30px;
+}
+.lista.lista-pagamento-pendente .rectangulo-preco > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-movimento-carregado {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-movimento-carregado .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 69px;
+  border-radius: 90px;
+  background-color: #323232;
+  background-size: 60%;
+}
+.lista.lista-movimento-carregado .bg-img-pagamento {
+  background-image: url("../assets/icons/card.svg");
+}
+.lista.lista-movimento-carregado .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  height: 69px;
+  border-radius: 90px;
+  justify-content: center;
+}
+.lista.lista-movimento-carregado .info-pagamento {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-movimento-carregado .info-pagamento > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-movimento-carregado .info-pagamento > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-movimento-carregado .info-pagamento > h1:first-of-type {
+  color: #00e109;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-movimento-carregado .rectangulo-preco {
+  background-color: #181818;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 30px;
+}
+.lista.lista-movimento-carregado .rectangulo-preco > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-movimento-gasto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-movimento-gasto .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 69px;
+  border-radius: 90px;
+  background-color: #323232;
+  background-size: 60%;
+}
+.lista.lista-movimento-gasto .bg-img-pagamento {
+  background-image: url("../assets/icons/card.svg");
+}
+.lista.lista-movimento-gasto .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  height: 69px;
+  border-radius: 90px;
+  justify-content: center;
+}
+.lista.lista-movimento-gasto .info-pagamento {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-movimento-gasto .info-pagamento > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-movimento-gasto .info-pagamento > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-movimento-gasto .info-pagamento > h1:first-of-type {
+  color: #ff8a00;
+}
+.lista.lista-movimento-gasto .rectangulo-preco {
+  background-color: #181818;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 30px;
+}
+.lista.lista-movimento-gasto .rectangulo-preco > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.detalhes-pagamento {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  justify-content: flex-end;
+}
+.lista.detalhes-pagamento .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  display: inline-block;
+  width: 297px;
+  border-radius: 20px;
+  justify-content: center;
+  background: none;
+  background-color: rgb(50, 50, 50);
+}
+.lista.detalhes-pagamento .linha-pagamento {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 6px;
+  justify-content: space-between;
+}
+.lista.detalhes-pagamento .linha-pagamento > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.detalhes-pagamento .linha-pagamento > h1:first-of-type {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 4vw;
+  color: #c2c2c2;
+}
+.lista.detalhes-compra {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  justify-content: flex-end;
+}
+.lista.detalhes-compra .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  display: block;
+  width: 297px;
+  height: 40px;
+  border-radius: 20px;
+  background: none;
+  background-color: rgb(50, 50, 50);
+}
+.lista.detalhes-compra .linha-pagamento {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 6px;
+  justify-content: space-between;
+}
+.lista.detalhes-compra .linha-pagamento > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.detalhes-compra .linha-pagamento > h1:first-of-type {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 4vw;
+  color: #c2c2c2;
+}
+
+.venda.venda-final {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.venda.venda-final .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: none;
+  background-color: rgb(50, 50, 50);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.venda.venda-final .color-block > img {
+  margin-right: 20px;
+}
+.venda.venda-final .linha-pagamento {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 0px;
+  align-items: center;
+}
+.venda.venda-final .linha-pagamento > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.venda.venda-final .linha-pagamento > h1 {
+  font-weight: 300;
+  font-size: 3vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #c2c2c2;
+}
+.venda.saldo-cashless {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.venda.saldo-cashless .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: none;
+  background-color: rgb(50, 50, 50);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.venda.saldo-cashless .color-block > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.venda.saldo-cashless .linha-pagamento {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 0px;
+  align-items: center;
+}
+.venda.saldo-cashless .linha-pagamento > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.venda.saldo-cashless .linha-pagamento > h1 {
+  font-weight: 300;
+  font-size: 3vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #c2c2c2;
+}
+
+.mensagens.aviso {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.mensagens.aviso .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: none;
+  background-color: rgb(50, 50, 50);
+}
+.mensagens.aviso .color-block > img {
+  margin-right: 20px;
+}
+.mensagens.aviso .linha-pagamento {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 0px;
+  align-items: center;
+}
+.mensagens.aviso .linha-pagamento > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.mensagens.aviso .linha-pagamento > h1 {
+  font-weight: 300;
+  font-size: 4vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ff8a00;
+}
+
+.seta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.seta .color-block {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgb(50, 50, 50);
+}
+
+.caixa-texto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.caixa-texto .color-block {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+}
+.caixa-texto .color-block > h1 {
+  font-family: Roboto;
+  font-size: medium;
+  font-weight: 100;
+  color: #c2c2c2;
+  line-height: 20px;
+}
+
+/* -------------------------------------------------------- */
+.inicio {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  margin-top: 20px;
+}
+
+.card.card-festival-comprado {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.card.card-festival-comprado .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px;
+  border-radius: 30px;
+  position: relative;
+}
+.card.card-festival-comprado .rectangulo-status {
+  background-color: #ff9900;
+  padding: 2px;
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.card.card-festival-comprado .rectangulo-status span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+  color: white;
+}
+.card.card-festival-comprado::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 120px;
+  height: 180px;
+  border-left: 6px dashed #ff8a00;
+  z-index: 1;
+}
+.card.card-festival-comprado .info-festival {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card.card-festival-comprado .info-festival > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.card.card-festival-comprado .info-festival > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.card.card-festival-comprado .info-festival > h1:first-of-type {
+  color: #ff9900;
+}
+.card.card-festival {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.card.card-festival .bg-img {
+  height: 280px !important;
+  border-radius: 20px;
+}
+.card.card-festival .info-festival {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card.card-festival .info-festival > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.card.card-festival .info-festival > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  ffont-weight: 300;
+  font-size: 3vw;
+}
+.card.card-festival .info-festival > h1:first-of-type {
+  color: #ff9900;
+}
+.card.card-festival .extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card.card-festival .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  bottom: 0px;
+  right: 20px;
+}
+
+/* -------------------------------------------------------- */
+.barra_pesquisa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.lista.lista-festival {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-festival .info-festival {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  bottom: 0px;
+  position: relative;
+}
+.lista.lista-festival .info-festival > span {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 4vw;
+  color: #c2c2c2;
+}
+.lista.lista-festival .info-festival > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.lista.lista-festival .info-festival > h1:first-of-type {
+  color: #ff9900;
+}
+.lista.lista-festival .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  right: 40px;
+}
+.lista.lista-artista {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-artista .info-artista {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-artista .info-artista > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-artista .info-artista > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-artista .info-artista > h1:first-of-type {
+  color: #ff9900;
+}
+.lista.lista-artista .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  right: 40px;
+}
+
+.mensagens.procura {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.mensagens.procura .color-block {
+  margin: 10px;
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: none;
+  background-color: rgb(50, 50, 50);
+}
+.mensagens.procura .color-block > img {
+  margin-right: 20px;
+}
+.mensagens.procura .linha-pagamento {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 0px;
+  align-items: center;
+}
+.mensagens.procura .linha-pagamento > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.mensagens.procura .linha-pagamento > h1 {
+  font-weight: 300;
+  font-size: 3vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #a0a0a0;
+}
+
+/* -------------------------------------------------------- */
+.divider {
+  border: 1px solid #A0A0A0;
+  width: 90%;
+  margin: 20px;
+}
+
+.card.card-festival-comprado {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.card.card-festival-comprado .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+.card.card-festival-comprado .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+}
+.card.info-festival {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+}
+.card.info-festival > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.card.info-festival > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-size: medium;
+}
+.card.info-festival > h1:first-of-type {
+  color: #ff9900;
+}
+
+.lista.lista-concerto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-concerto .bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+}
+.lista.lista-concerto .info-concerto {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista.lista-concerto .info-concerto > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+}
+.lista.lista-concerto .info-concerto > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.lista-concerto .info-concerto > h1:first-of-type {
+  color: #ff9900;
+}
+.lista.lista-concerto .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 40px;
+}
+.lista.lista-bilhete.indisponivel .info-bilhete > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-size: 4vw;
+  opacity: 0.5;
+}
+.lista.lista-bilhete.indisponivel .info-bilhete > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+  opacity: 0.5;
+}
+.lista.lista-bilhete.indisponivel .rectangulo-preco {
+  background-color: #181818;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 30px;
+}
+.lista.lista-bilhete.indisponivel .rectangulo-preco > span {
+  font-family: Roboto;
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 3vw;
+  opacity: 0.5;
+}
+.lista.lista-bilhete.indisponivel .bg-img {
+  opacity: 0.5;
+}
+
+.caixa-texto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.caixa-texto .color-block {
+  width: 92%;
+  display: flex;
+  justify-content: flex-start;
+}
+.caixa-texto .color-block > h1 {
+  font-family: Roboto;
+  font-size: medium;
+  font-weight: 100;
+  color: #c2c2c2;
+  line-height: 22px;
+}
+
+/* -------------------------------------------------------- */
+.mensagens.aviso {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.mensagens.aviso .color-block {
+  margin: 10px;
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: none;
+  background-color: rgb(50, 50, 50);
+}
+.mensagens.aviso .color-block > img {
+  margin-right: 20px;
+}
+.mensagens.aviso .linha-pagamento {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 0px;
+  align-items: center;
+}
+.mensagens.aviso .linha-pagamento > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.mensagens.aviso .linha-pagamento > h1 {
+  font-weight: 300;
+  font-size: 3vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ff8a00;
+}
+
+.lista.lista-festival {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+.lista.lista-festival .color-block {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(38, 38, 38), rgb(49, 49, 49));
+  border-radius: 20px;
+}
+.lista.lista-festival .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.lista.lista-artista .circulo-likes {
+  background-color: #181818;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.lista.detalhes-pagamento {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+.lista.detalhes-pagamento .color-block {
+  margin-right: 10px;
+}
+.lista.detalhes-pagamento .referencia {
+  padding: 10px;
+}
+.lista.detalhes-pagamento .referencia .linha-pagamento {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+  justify-content: space-between;
+}
+.lista.detalhes-pagamento .referencia .linha-pagamento > h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #c2c2c2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.lista.detalhes-pagamento .referencia .linha-pagamento > h1:first-of-type {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 3vw;
+  color: #c2c2c2;
+}
+
+.seta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.seta .color-block {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgb(50, 50, 50);
+}
+
+/*# sourceMappingURL=estilos.css.map */
